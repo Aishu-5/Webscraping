@@ -1,0 +1,68 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.navbar {
+  background-color: #2d89ef; /* Blue background for navbar */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center; /* Center vertically align items in the navbar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  height: 40px; /* Adjust the height of the logo */
+  margin-right: 20px; /* Space between logo and buttons */
+  border-radius: 5px; /* Add rounded corners to the logo */
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center; /* Center align the buttons */
+  gap: 20px; /* Space between buttons */
+  margin-left: auto; /* Push buttons to the right */
+}
+
+.nav-buttons button {
+  background-color: #2d89ef; /* Change button color to blue */
+  color: white; /* Text color */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  background-color: #0056b3; /* Change to a darker blue on hover */
+}
+
+.nav-buttons button:focus {
+  outline: none; /* Remove outline on focus */
+}
+
+.container {
+  margin: 20px;
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .nav-buttons {
+    flex-direction: row; /* Change back to row layout on larger screens */
+    gap: 10px;
+  }
+
+  .nav-buttons button {
+    width: auto; /* Reset width for buttons */
+  }
+}
